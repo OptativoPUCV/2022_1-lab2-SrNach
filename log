@@ -16,3 +16,14 @@ Fri Mar 18 14:41:51 UTC 2022:
  tests:  1|5
 total_score: 10/70
 318b6d4
+Fri Mar 18 14:45:06 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:45:34: error: ‘list->current’ is a pointer; did you mean to use ‘->’?
+     list->current = list->current.next;
+                                  ^
+                                  ->
+Compilation failed
+493c1e9
