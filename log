@@ -61,3 +61,17 @@ Fri Mar 18 14:50:08 UTC 2022:
  1 file changed, 2 insertions(+)
  tests:  0|0
 fc1a3f5
+Fri Mar 18 14:50:50 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:43:5: error: ‘return’ with no value, in function returning non-void [-Werror]
+     return;
+     ^~~~~~
+list.c:39:8: note: declared here
+ void * firstList(List * list) {
+        ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ac6a97e
