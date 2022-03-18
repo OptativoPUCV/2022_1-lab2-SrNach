@@ -27,3 +27,9 @@ list.c:45:34: error: ‘list->current’ is a pointer; did you mean to use ‘->
                                   ->
 Compilation failed
 493c1e9
+Fri Mar 18 14:45:15 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+b4b126d
