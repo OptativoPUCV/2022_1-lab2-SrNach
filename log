@@ -108,3 +108,14 @@ Fri Mar 18 14:54:11 UTC 2022:
  tests:  2|5
 total_score: 15/70
 bb88260
+Fri Mar 18 14:54:38 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:47:23: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
+     if (list->current != NULL & list->current->next != NULL)
+                       ^
+cc1: all warnings being treated as errors
+Compilation failed
+5dedc71
