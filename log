@@ -75,3 +75,8 @@ list.c:39:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 ac6a97e
+Fri Mar 18 14:50:59 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+915e617
