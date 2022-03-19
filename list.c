@@ -98,11 +98,25 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    list->current->prev->next = list->current->next;
-    list->current->next->prev = list->current->prev;
-
     void *d = list->current->data;
-    list->current = list->current->next;
+
+    if (list->current == list->head){
+        list->current->next->prev = NULL;
+        list->current = list->current->next;
+        list->head = list->current;
+    }
+    else{
+        if (list->current == list->tail){
+            list->current->prev->next = NULL;
+            list->current = list->current->prev;
+            list->tail = list->current;
+        }
+        else{
+            list->current->next->prev = list->current->prev;
+            list->current->prev->next = list->current->next;
+            list->current = list->current->next;
+        }
+    }
     return d;
 }
 
