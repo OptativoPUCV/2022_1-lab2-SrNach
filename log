@@ -295,3 +295,9 @@ vi., 18 de mar. de 2022 22:43:22:
  tests:  10|2
 total_score: 50/70
 ecab0e1
+vi., 18 de mar. de 2022 22:44:07: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  10|2
+total_score: 50/70
+8986f09
