@@ -84,7 +84,6 @@ void pushCurrent(List * list, void * data) {
         list->head->prev = n;
         n->next = list->head;
         list->head = n;
-        list->current = n;
         booly++;
     }
     if (list->current == list->tail && booly == 0){
