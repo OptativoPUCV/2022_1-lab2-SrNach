@@ -38,8 +38,9 @@ List * createList() {
 
 void * firstList(List * list) {
     list->current = list->head;
-    if (list->head != NULL)
-        return list->head->data;
+
+    if (list->head != NULL) return list->head->data;
+
     return NULL;
 }
 
@@ -84,6 +85,7 @@ void pushFront(List * list, void * data) {
     n->next = list->head;
     list->head = n;
     list->current = n;
+    list->head->data = data;
 }
 
 void pushBack(List * list, void * data) {
